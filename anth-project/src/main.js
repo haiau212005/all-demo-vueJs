@@ -8,8 +8,7 @@ Vue.config.productionTip = false
 Vue.prototype.$sData = [
     {id: 1, name: 'hai anh'},
     {id: 2, name: 'mai'},
-    {id: 3, name: 'hen'},
-    {id: 4, name: 'van'}
+    {id: 3, name: 'hen'}
 ]
 
 /* eslint-disable no-new */
