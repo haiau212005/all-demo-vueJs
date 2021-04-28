@@ -7,6 +7,7 @@ import router from './router'
 Vue.config.productionTip = false
 Vue.prototype.$sData = [
     {id: 1, name: 'hai anh'},
+    {id: 2, name: 'mai'},
     {id: 2, name: 'mai'}
 ]
 
