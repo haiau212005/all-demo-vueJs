@@ -2,7 +2,7 @@
   <div>
     <h2>Hello</h2>
     <h2>result: {{ msg }}</h2>
-    <children v-on:PassNow="GetDataFromChil" v-bind="PropHere"></children>
+    <children v-on:PassNow="GetDataFromChil" v-bind:PropHere="PropHere"></children>
   </div>
 </template>
 

@@ -1,6 +1,7 @@
 <template>
   <div>
-      <p>day là children {{ PropHere }}</p>
+      <p>day là children </p>
+      <p>{{ PropHere }}</p>
       <button type="button" v-on:click="PassData">send</button>
     </div>
 </template>
