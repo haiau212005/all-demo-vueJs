@@ -13,8 +13,9 @@
               <td><router-link :to="{ name: 'DetailHref', params:{ id: item.id }}">link</router-link></td>
           </tr>
       </table>
+      <p>{{ count }}</p>
       <hr/>
-      <detail v-bind:sDataDetail="sDataDetail"></detail>
+      <detail v-bind:sDataDetail="sDataDetail" v-on:hehehe="Test"></detail> 
   </div>
 </template>
 
@@ -27,7 +28,8 @@ export default {
         return {
             sData: this.$sData,
             seen: true,
-            sDataDetail: ''
+            sDataDetail: '',
+            count: 0
         }
     },
     components: {
@@ -36,6 +38,9 @@ export default {
     methods: {
         GetDetail(arg) {
             this.sDataDetail = arg
+        },
+        Test(arg){
+            this.count += arg
         }
     },
     mounted () {
