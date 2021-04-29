@@ -1,6 +1,6 @@
 <template>
   <div>
-      <p>day là children</p>
+      <p>day là children {{ PropHere }}</p>
       <button type="button" v-on:click="PassData">send</button>
     </div>
 </template>
@@ -12,6 +12,7 @@ export default {
             this.$emit('PassNow', 100)
         }
     },
+    props: ['PropHere'],
 }
 </script>
 
