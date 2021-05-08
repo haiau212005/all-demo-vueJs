@@ -3,6 +3,7 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+import '../src/assets/lib/jquery-3.2.1.min.js'
 
 Vue.config.productionTip = false
 
